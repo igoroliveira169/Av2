@@ -27,7 +27,7 @@ public class EmpresaDTO {
     public EmpresaDTO() {}
 
     public EmpresaDTO(Empresa empresa) {
-        this.id = getId();
+        this.id = empresa.getIdEmpresa();  // Aqui deve ser o ID da empresa, e não getId()
         this.nomeEmpresa = empresa.getNomeEmpresa();
         this.cnpjEmpresa = empresa.getCnpjEmpresa();
         this.enderecoEmpresa = empresa.getEnderecoEmpresa();
